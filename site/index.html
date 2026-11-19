@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>QSR Corporate Jobs — every restaurant HQ job in one place</title>
+<meta name="description" content="Corporate and support-center jobs from the biggest quick-service restaurant brands, updated daily.">
+<style>
+  :root{
+    --bg:#f6f3ee; --panel:#fffdf9; --ink:#1d1a16; --muted:#6f675d; --line:#e6dfd4;
+    --accent:#d9480f; --accent-ink:#fff; --chip:#efe8dd; --good:#2b8a3e; --bad:#c92a2a;
+    --radius:12px;
+  }
+  *{box-sizing:border-box}
+  body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 ui-sans-serif,system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+  a{color:inherit}
+  header{background:var(--ink);color:#fff;padding:36px 20px 28px}
+  .wrap{max-width:1180px;margin:0 auto}
+  h1{margin:0;font:800 clamp(28px,4vw,44px)/1.05 Georgia,"Times New Roman",serif;letter-spacing:-.5px}
+  h1 span{color:#ffa94d}
+  .sub{color:#cfc6ba;margin:8px 0 22px;max-width:640px}
+  .search{display:flex;gap:10px;flex-wrap:wrap}
+  .search input{flex:1 1 320px;padding:14px 16px;border-radius:10px;border:0;font-size:16px}
+  .search select{padding:14px;border-radius:10px;border:0;font-size:15px}
+  .stats{display:flex;gap:22px;margin-top:16px;color:#cfc6ba;font-size:13px;flex-wrap:wrap}
+  .stats b{color:#fff;font-size:15px}
+  main{display:grid;grid-template-columns:250px 1fr;gap:26px;padding:26px 20px 60px}
+  aside{position:sticky;top:16px;align-self:start;max-height:calc(100vh - 32px);overflow:auto}
+  .fgroup{margin-bottom:22px}
+  .fgroup h3{font-size:12px;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);margin:0 0 8px}
+  .opt{display:flex;align-items:center;gap:8px;padding:3px 0;cursor:pointer;font-size:14px}
+  .opt .n{margin-left:auto;color:var(--muted);font-size:12px}
+  .opt input{accent-color:var(--accent)}
+  .clear{background:none;border:1px solid var(--line);border-radius:8px;padding:7px 12px;cursor:pointer;font-size:13px}
+  .toolbar{display:flex;justify-content:space-between;align-items:center;margin-bottom:12px;gap:10px;flex-wrap:wrap}
+  .count{font-weight:700}
+  .list{display:flex;flex-direction:column;gap:10px}
+  .job{background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:16px 18px;display:grid;grid-template-columns:52px 1fr auto;gap:14px;align-items:center;text-decoration:none;transition:border-color .15s, transform .15s}
+  .job:hover{border-color:var(--accent);transform:translateY(-1px)}
+  .logo{width:52px;height:52px;border-radius:10px;display:grid;place-items:center;font-weight:800;color:#fff;font-size:17px}
+  .title{font-weight:700;font-size:16px;margin:0 0 3px}
+  .meta{color:var(--muted);font-size:13px;display:flex;gap:6px 14px;flex-wrap:wrap}
+  .tags{display:flex;gap:6px;margin-top:7px;flex-wrap:wrap}
+  .tag{background:var(--chip);border-radius:999px;padding:2px 9px;font-size:12px}
+  .tag.new{background:#fff0e6;color:var(--accent);font-weight:700}
+  .tag.remote{background:#e6f4ea;color:var(--good)}
+  .go{background:var(--accent);color:var(--accent-ink);border-radius:8px;padding:8px 12px;font-weight:700;font-size:13px;white-space:nowrap}
+  .more{display:block;margin:18px auto 0;padding:12px 22px;border-radius:10px;border:1px solid var(--line);background:var(--panel);cursor:pointer;font-weight:700}
+  .more[hidden]{display:none}
+  .empty{background:var(--panel);border:1px dashed var(--line);border-radius:var(--radius);padding:40px;text-align:center;color:var(--muted)}
+  details.sources{margin-top:28px;background:var(--panel);border:1px solid var(--line);border-radius:var(--radius);padding:12px 16px}
+  details.sources summary{cursor:pointer;font-weight:700}
+  .srow{display:flex;gap:10px;padding:6px 0;border-top:1px solid var(--line);font-size:13px}
+  .srow:first-of-type{border-top:0}
+  .dot{width:9px;height:9px;border-radius:50%;margin-top:6px;flex:none}
+  .filters-toggle{display:none}
+  footer{color:var(--muted);font-size:12px;text-align:center;padding:0 20px 40px}
+  @media (max-width:820px){
+    main{grid-template-columns:1fr}
+    aside{position:static;max-height:none;display:none}
+    aside.open{display:block}
+    .filters-toggle{display:inline-block}
+    .job{grid-template-columns:44px 1fr}
+    .logo{width:44px;height:44px;font-size:15px}
+    .go{display:none}
+  }
+</style>
+</head>
+<body>
+<header>
+  <div class="wrap">
+    <h1>QSR <span>Corporate</span> Jobs</h1>
+    <p class="sub">Every support-center, HQ and field-leadership opening from America's biggest quick-service restaurant brands. One search, updated every morning.</p>
+    <div class="search">
+      <input id="q" type="search" placeholder="Search titles, brands or cities — e.g. “product manager”, “Atlanta”, “supply chain”" autocomplete="off">
+      <select id="sort" aria-label="Sort">
+        <option value="new">Newest first</option>
+        <option value="brand">Brand A–Z</option>
+        <option value="title">Title A–Z</option>
+      </select>
+    </div>
+    <div class="stats" id="stats"></div>
+  </div>
+</header>
+
+<main class="wrap">
+  <aside id="filters">
+    <div class="fgroup"><h3>Posted</h3><div id="f-posted"></div></div>
+    <div class="fgroup"><h3>Brand</h3><div id="f-brand"></div></div>
+    <div class="fgroup"><h3>Function</h3><div id="f-category"></div></div>
+    <div class="fgroup"><h3>Level</h3><div id="f-level"></div></div>
+    <div class="fgroup"><h3>Work style</h3><div id="f-remote"></div></div>
+    <button class="clear" id="clear">Clear all filters</button>
+  </aside>
+
+  <section>
+    <div class="toolbar">
+      <div class="count" id="count">Loading jobs…</div>
+      <button class="clear filters-toggle" id="ftoggle">Filters</button>
+    </div>
+    <div class="list" id="list"></div>
+    <button class="more" id="more" hidden>Show more</button>
+
+    <details class="sources" id="sources">
+      <summary>Sources &amp; last update</summary>
+      <div id="srclist"></div>
+    </details>
+  </section>
+</main>
+<footer>Postings link to each company's official careers site, where you apply. Listings are collected automatically from public careers pages and may lag by up to a day.</footer>
+
+<script>
+const PAGE = 40;
+const COLORS = ["#d9480f","#1864ab","#2b8a3e","#862e9c","#c2255c","#e67700","#0b7285","#5f3dc4","#a61e4d","#364fc7","#087f5b","#9c36b5"];
+const state = { q:"", sort:"new", brand:new Set(), category:new Set(), level:new Set(), remote:"", posted:"", shown:PAGE };
+let JOBS = [], TODAY = new Date();
+
+const $ = id => document.getElementById(id);
+const esc = s => String(s ?? "").replace(/[&<>"']/g, c => ({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;","'":"&#39;"}[c]));
+const colorFor = b => COLORS[[...b].reduce((a,c)=>a+c.charCodeAt(0),0) % COLORS.length];
+const initials = b => b.replace(/[^A-Za-z0-9 ]/g,"").split(/\s+/).filter(Boolean).slice(0,2).map(w=>w[0]).join("").toUpperCase();
+const daysAgo = d => d ? Math.floor((TODAY - new Date(d + "T12:00:00")) / 864e5) : null;
+const ago = d => { const n = daysAgo(d); if (n === null) return ""; if (n <= 0) return "Today"; if (n === 1) return "Yesterday"; if (n < 30) return n + " days ago"; return Math.floor(n/30) + " mo ago"; };
+const dateOf = j => j.posted || j.first_seen;
+
+function readURL(){
+  const p = new URLSearchParams(location.search);
+  state.q = p.get("q") || ""; state.sort = p.get("sort") || "new";
+  state.remote = p.get("remote") || ""; state.posted = p.get("posted") || "";
+  for (const k of ["brand","category","level"]) state[k] = new Set((p.get(k)||"").split("|").filter(Boolean));
+  $("q").value = state.q; $("sort").value = state.sort;
+}
+function writeURL(){
+  const p = new URLSearchParams();
+  if (state.q) p.set("q", state.q);
+  if (state.sort !== "new") p.set("sort", state.sort);
+  for (const k of ["brand","category","level"]) if (state[k].size) p.set(k, [...state[k]].join("|"));
+  if (state.remote) p.set("remote", state.remote);
+  if (state.posted) p.set("posted", state.posted);
+  history.replaceState(null, "", p.toString() ? "?" + p : location.pathname);
+}
+
+function matches(j, skip){
+  if (state.q){
+    const hay = `${j.title} ${j.brand} ${j.parent} ${j.location} ${j.category} ${j.department}`.toLowerCase();
+    if (!state.q.toLowerCase().split(/\s+/).every(w => hay.includes(w))) return false;
+  }
+  if (skip!=="brand" && state.brand.size && !state.brand.has(j.brand)) return false;
+  if (skip!=="category" && state.category.size && !state.category.has(j.category)) return false;
+  if (skip!=="level" && state.level.size && !state.level.has(j.level)) return false;
+  if (skip!=="remote" && state.remote === "remote" && !j.remote) return false;
+  if (skip!=="remote" && state.remote === "onsite" && j.remote) return false;
+  if (skip!=="posted" && state.posted){ const n = daysAgo(dateOf(j)); if (n === null || n > +state.posted) return false; }
+  return true;
+}
+
+function renderFacet(key, el){
+  const counts = {};
+  JOBS.filter(j => matches(j, key)).forEach(j => counts[j[key]] = (counts[j[key]]||0) + 1);
+  const keys = Object.keys(counts).filter(Boolean).sort((a,b)=> key==="level" ? 0 : a.localeCompare(b));
+  [...state[key]].forEach(k => { if (!(k in counts)) { counts[k]=0; keys.push(k);} });
+  el.innerHTML = keys.map(k => `<label class="opt"><input type="checkbox" data-k="${key}" value="${esc(k)}" ${state[key].has(k)?"checked":""}> ${esc(k)}<span class="n">${counts[k]}</span></label>`).join("");
+}
+function renderRadio(key, el, options){
+  el.innerHTML = options.map(([v,label]) => {
+    const n = JOBS.filter(j => { const s = state[key]; state[key] = v; const r = matches(j); state[key] = s; return r; }).length;
+    return `<label class="opt"><input type="radio" name="${key}" data-r="${key}" value="${v}" ${state[key]===v?"checked":""}> ${label}<span class="n">${n}</span></label>`;
+  }).join("");
+}
+
+function render(){
+  writeURL();
+  let res = JOBS.filter(j => matches(j));
+  if (state.sort === "brand") res.sort((a,b)=> a.brand.localeCompare(b.brand) || a.title.localeCompare(b.title));
+  else if (state.sort === "title") res.sort((a,b)=> a.title.localeCompare(b.title));
+  else res.sort((a,b)=> (dateOf(b)||"").localeCompare(dateOf(a)||""));
+
+  $("count").textContent = `${res.length.toLocaleString()} ${res.length===1?"job":"jobs"}`;
+  if (!JOBS.length){
+    $("list").innerHTML = `<div class="empty"><b>No jobs yet.</b><br>The first daily update hasn't run. Check back in a few minutes.</div>`;
+  } else if (!res.length){
+    $("list").innerHTML = `<div class="empty"><b>No matches.</b><br>Try fewer filters or a broader search.</div>`;
+  } else {
+    $("list").innerHTML = res.slice(0, state.shown).map(j => {
+      const n = daysAgo(j.first_seen);
+      return `<a class="job" href="${esc(j.url)}" target="_blank" rel="noopener">
+        <div class="logo" style="background:${colorFor(j.brand)}">${esc(initials(j.brand))}</div>
+        <div>
+          <p class="title">${esc(j.title)}</p>
+          <div class="meta"><span><b>${esc(j.brand)}</b></span>${j.location?`<span>${esc(j.location)}</span>`:""}<span>${esc(ago(dateOf(j)))}</span></div>
+          <div class="tags">${n!==null && n<=2?`<span class="tag new">New</span>`:""}${j.remote?`<span class="tag remote">Remote</span>`:""}<span class="tag">${esc(j.category)}</span><span class="tag">${esc(j.level)}</span></div>
+        </div>
+        <span class="go">View &amp; apply ↗</span>
+      </a>`;}).join("");
+  }
+  $("more").hidden = res.length <= state.shown;
+  $("more").textContent = `Show more (${(res.length - state.shown).toLocaleString()} left)`;
+
+  renderFacet("brand", $("f-brand"));
+  renderFacet("category", $("f-category"));
+  renderFacet("level", $("f-level"));
+  renderRadio("posted", $("f-posted"), [["","Any time"],["1","Past 24 hours"],["7","Past week"],["30","Past month"]]);
+  renderRadio("remote", $("f-remote"), [["","All"],["remote","Remote"],["onsite","On-site / hybrid"]]);
+}
+
+document.addEventListener("change", e => {
+  const t = e.target;
+  if (t.dataset.k){ t.checked ? state[t.dataset.k].add(t.value) : state[t.dataset.k].delete(t.value); }
+  else if (t.dataset.r){ state[t.dataset.r] = t.value; }
+  else if (t.id === "sort"){ state.sort = t.value; }
+  else return;
+  state.shown = PAGE; render();
+});
+let timer; $("q").addEventListener("input", e => { clearTimeout(timer); timer = setTimeout(()=>{ state.q = e.target.value.trim(); state.shown = PAGE; render(); }, 150); });
+$("more").onclick = () => { state.shown += PAGE; render(); };
+$("clear").onclick = () => { Object.assign(state, {q:"",remote:"",posted:"",shown:PAGE}); ["brand","category","level"].forEach(k=>state[k].clear()); $("q").value=""; render(); };
+$("ftoggle").onclick = () => $("filters").classList.toggle("open");
+
+async function load(){
+  readURL();
+  try {
+    const [jr, sr] = await Promise.all([fetch("data/jobs.json",{cache:"no-store"}), fetch("data/status.json",{cache:"no-store"}).catch(()=>null)]);
+    const data = await jr.json();
+    JOBS = data.jobs || [];
+    const brands = new Set(JOBS.map(j=>j.brand)).size;
+    const newToday = JOBS.filter(j => daysAgo(j.first_seen) === 0).length;
+    const upd = data.updated ? new Date(data.updated).toLocaleString([], {dateStyle:"medium", timeStyle:"short"}) : "—";
+    $("stats").innerHTML = `<span><b>${JOBS.length.toLocaleString()}</b> open roles</span><span><b>${brands}</b> brands</span><span><b>${newToday}</b> new today</span><span>Updated ${esc(upd)}</span>`;
+    if (sr && sr.ok){
+      const s = await sr.json();
+      $("srclist").innerHTML = (s.sources||[]).map(x => {
+        const c = x.ok ? "var(--good)" : x.ok === false ? "var(--bad)" : "#adb5bd";
+        return `<div class="srow"><span class="dot" style="background:${c}"></span><div><b>${esc(x.brand)}</b> — ${x.ok ? `${x.count} corporate roles${x.scanned!=null?` (from ${x.scanned} postings scanned)`:""}` : esc(x.message)}</div></div>`;
+      }).join("");
+    }
+  } catch (e) { JOBS = []; }
+  render();
+}
+load();
+</script>
+</body>
+</html>
