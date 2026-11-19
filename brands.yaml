@@ -1,0 +1,82 @@
+# ─────────────────────────────────────────────────────────────────────────────
+#  The list of brands your site pulls jobs from.
+#
+#  To turn a brand off:   set  enabled: false
+#  To add a brand:        run the "Find a brand's settings" action on GitHub
+#                         (see README), then paste what it prints at the bottom.
+#
+#  After each daily run, the site's "Sources" panel shows which brands worked.
+#  Brands marked "best guess" were set up from the brand's public careers site
+#  and may need a small tweak if they show as FAILED or 0 jobs.
+# ─────────────────────────────────────────────────────────────────────────────
+
+brands:
+
+  # ── Dedicated corporate job sites (everything listed is a corporate role) ──
+  - name: "Wendy's"
+    parent: The Wendy's Company
+    source: icims
+    host: corporatejobs-wendys.icims.com
+    all_corporate: true
+
+  - name: "Chick-fil-A"
+    parent: Chick-fil-A, Inc.
+    source: icims
+    host: careers-chickfila.icims.com
+    all_corporate: true
+
+  # ── Mixed sites (restaurant + corporate; the filter removes crew jobs) ──
+  - name: "Domino's"
+    parent: Domino's Pizza, Inc.
+    source: smartrecruiters
+    company: Dominos
+
+  - name: "sweetgreen"
+    parent: Sweetgreen, Inc.
+    source: greenhouse
+    board: sweetgreen
+
+  - name: "Chipotle"
+    parent: Chipotle Mexican Grill
+    source: sitemap                      # best guess
+    sitemap: https://jobs.chipotle.com/sitemap.xml
+    url_pattern: /job/
+
+  - name: "McDonald's"
+    parent: McDonald's Corporation
+    source: sitemap                      # best guess
+    sitemap: https://careers.mcdonalds.com/sitemap.xml
+    url_pattern: /job/\d+
+
+  - name: "Inspire Brands"               # Arby's, Dunkin', Sonic, BWW, Jimmy John's, Baskin-Robbins
+    parent: Inspire Brands
+    source: sitemap                      # best guess
+    sitemap: https://careers.inspirebrands.com/sitemap.xml
+    url_pattern: /job/
+
+  - name: "Shake Shack"
+    parent: Shake Shack Inc.
+    source: sitemap                      # best guess
+    sitemap: https://careers.shakeshack.com/sitemap.xml
+    url_pattern: /job/
+
+  - name: "Yum! Brands"                  # KFC, Taco Bell, Pizza Hut, Habit Burger
+    parent: Yum! Brands
+    source: sitemap                      # best guess
+    sitemap: https://jobs.yum.com/sitemap.xml
+    url_pattern: /jobs/
+
+  - name: "Restaurant Brands International"   # Burger King, Tim Hortons, Popeyes, Firehouse Subs
+    parent: RBI
+    source: sitemap                      # best guess
+    sitemap: https://careers.rbi.com/sitemap.xml
+    url_pattern: /job
+
+  - name: "Starbucks"
+    parent: Starbucks Corporation
+    source: workday                      # best guess
+    url: https://starbucks.wd1.myworkdayjobs.com/StarbucksExternal
+
+  # ── Ready to add: run "Find a brand's settings" with each careers page URL ──
+  # Papa John's, Wingstop, CAVA, Dutch Bros, Jack in the Box, Panera Brands,
+  # Raising Cane's, Subway, Jersey Mike's, Whataburger, Culver's, Zaxby's
