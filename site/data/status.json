@@ -1,1 +1,80 @@
-{"updated": null, "sources": []}
+{
+ "updated": "2026-11-19T15:10:07Z",
+ "sources": [
+  {
+   "brand": "Wendy's",
+   "ok": true,
+   "count": 0,
+   "scanned": 0,
+   "message": "Connected, but found 0 postings \u2014 check the settings"
+  },
+  {
+   "brand": "Chick-fil-A",
+   "ok": true,
+   "count": 0,
+   "scanned": 0,
+   "message": "Connected, but found 0 postings \u2014 check the settings"
+  },
+  {
+   "brand": "Domino's",
+   "ok": true,
+   "count": 115,
+   "scanned": 8000,
+   "message": "OK"
+  },
+  {
+   "brand": "sweetgreen",
+   "ok": true,
+   "count": 17,
+   "scanned": 74,
+   "message": "OK"
+  },
+  {
+   "brand": "Chipotle",
+   "ok": true,
+   "count": 118,
+   "scanned": 400,
+   "message": "OK"
+  },
+  {
+   "brand": "McDonald's",
+   "ok": false,
+   "count": 0,
+   "message": "HTTPError: 403 Client Error: Forbidden for url: https://careers.mcdonalds.com/sitemap.xml"
+  },
+  {
+   "brand": "Inspire Brands",
+   "ok": true,
+   "count": 74,
+   "scanned": 74,
+   "message": "OK"
+  },
+  {
+   "brand": "Shake Shack",
+   "ok": true,
+   "count": 10,
+   "scanned": 400,
+   "message": "OK"
+  },
+  {
+   "brand": "Yum! Brands",
+   "ok": true,
+   "count": 0,
+   "scanned": 0,
+   "message": "Connected, but found 0 postings \u2014 check the settings"
+  },
+  {
+   "brand": "Restaurant Brands International",
+   "ok": true,
+   "count": 119,
+   "scanned": 135,
+   "message": "OK"
+  },
+  {
+   "brand": "Starbucks",
+   "ok": false,
+   "count": 0,
+   "message": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://starbucks.wd1.myworkdayjobs.com/wday/cxs/starbucks/StarbucksExternal/jobs"
+  }
+ ]
+}
