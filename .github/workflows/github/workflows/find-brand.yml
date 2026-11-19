@@ -1,0 +1,33 @@
+name: Find a brand's settings
+
+on:
+  workflow_dispatch:
+    inputs:
+      name:
+        description: "Brand name (e.g. Wingstop)"
+        required: true
+      url:
+        description: "The brand's careers page (e.g. https://www.wingstop.com/careers)"
+        required: true
+
+jobs:
+  find:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Detect careers system
+        env:
+          BRAND: ${{ inputs.name }}
+          URL: ${{ inputs.url }}
+        run: |
+          python -m scraper.discover "$BRAND" "$URL" | tee result.txt
+          {
+            echo '### Paste this at the bottom of brands.yaml'
+            echo '```yaml'
+            sed -n '/- name:/,$p' result.txt
+            echo '```'
+          } >> "$GITHUB_STEP_SUMMARY"
