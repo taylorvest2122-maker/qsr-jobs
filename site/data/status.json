@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-21T11:13:08Z",
+ "updated": "2026-11-22T11:09:01Z",
  "sources": [
   {
    "brand": "Wendy's",
@@ -18,7 +18,7 @@
   {
    "brand": "Domino's",
    "ok": true,
-   "count": 70,
+   "count": 41,
    "scanned": 8000,
    "message": "OK"
   },
@@ -32,8 +32,8 @@
   {
    "brand": "Chipotle",
    "ok": true,
-   "count": 168,
-   "scanned": 551,
+   "count": 171,
+   "scanned": 566,
    "message": "OK"
   },
   {
