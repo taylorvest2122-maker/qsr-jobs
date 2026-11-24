@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-23T11:30:50Z",
+ "updated": "2026-11-24T11:21:34Z",
  "sources": [
   {
    "brand": "Wendy's",
@@ -18,22 +18,22 @@
   {
    "brand": "Domino's",
    "ok": true,
-   "count": 46,
+   "count": 50,
    "scanned": 8000,
    "message": "OK"
   },
   {
    "brand": "sweetgreen",
    "ok": true,
-   "count": 15,
-   "scanned": 72,
+   "count": 16,
+   "scanned": 73,
    "message": "OK"
   },
   {
    "brand": "Chipotle",
    "ok": true,
-   "count": 170,
-   "scanned": 563,
+   "count": 179,
+   "scanned": 565,
    "message": "OK"
   },
   {
@@ -45,15 +45,15 @@
   {
    "brand": "Inspire Brands",
    "ok": true,
-   "count": 73,
-   "scanned": 73,
+   "count": 72,
+   "scanned": 72,
    "message": "OK"
   },
   {
    "brand": "Shake Shack",
    "ok": true,
-   "count": 10,
-   "scanned": 409,
+   "count": 11,
+   "scanned": 410,
    "message": "OK"
   },
   {
@@ -74,7 +74,7 @@
    "brand": "Starbucks",
    "ok": false,
    "count": 0,
-   "message": "HTTPError: 422 Client Error: Unprocessable Entity for url: https://starbucks.wd1.myworkdayjobs.com/wday/cxs/starbucks/StarbucksExternal/jobs"
+   "message": "HTTPError: 429 Client Error: Too Many Requests for url: https://starbucks.wd1.myworkdayjobs.com/wday/cxs/starbucks/StarbucksExternal/jobs"
   }
  ]
 }
