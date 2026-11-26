@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-25T11:26:26Z",
+ "updated": "2026-11-26T11:24:33Z",
  "sources": [
   {
    "brand": "Wendy's",
@@ -18,7 +18,7 @@
   {
    "brand": "Domino's",
    "ok": true,
-   "count": 54,
+   "count": 93,
    "scanned": 8000,
    "message": "OK"
   },
@@ -26,14 +26,14 @@
    "brand": "sweetgreen",
    "ok": true,
    "count": 15,
-   "scanned": 72,
+   "scanned": 70,
    "message": "OK"
   },
   {
    "brand": "Chipotle",
    "ok": true,
-   "count": 186,
-   "scanned": 579,
+   "count": 191,
+   "scanned": 583,
    "message": "OK"
   },
   {
@@ -52,7 +52,7 @@
   {
    "brand": "Shake Shack",
    "ok": true,
-   "count": 11,
+   "count": 10,
    "scanned": 410,
    "message": "OK"
   },
