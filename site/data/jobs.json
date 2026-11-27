@@ -1,7 +1,105 @@
 {
- "updated": "2026-11-26T11:24:33Z",
- "count": 497,
+ "updated": "2026-11-27T11:20:16Z",
+ "count": 496,
  "jobs": [
+  {
+   "id": "e8822ad61cec",
+   "brand": "Domino's",
+   "parent": "Domino's Pizza, Inc.",
+   "title": "Coordinator - Associate Regulatory Affairs & Contracts",
+   "url": "https://jobs.smartrecruiters.com/Dominos/744000163951261",
+   "location": "Ann Arbor, MI, US",
+   "remote": false,
+   "department": "",
+   "category": "Legal & Compliance",
+   "level": "Individual contributor",
+   "posted": "2026-11-27",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "id": "c50c78ab551b",
+   "brand": "Domino's",
+   "parent": "Domino's Pizza, Inc.",
+   "title": "Dough Production Worker",
+   "url": "https://jobs.smartrecruiters.com/Dominos/744000163952091",
+   "location": "Winnipeg, MB, CA",
+   "remote": false,
+   "department": "",
+   "category": "Other",
+   "level": "Individual contributor",
+   "posted": "2026-11-27",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "id": "7255c7036db6",
+   "brand": "Domino's",
+   "parent": "Domino's Pizza, Inc.",
+   "title": "Store Hiring and Training Lead (In-store fast paced environment) \u2013 SOUTHERN IN",
+   "url": "https://jobs.smartrecruiters.com/Dominos/744000163950509",
+   "location": "Charlestown, IN, US",
+   "remote": false,
+   "department": "",
+   "category": "People & HR",
+   "level": "Manager",
+   "posted": "2026-11-27",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "id": "c15a61c5f6e3",
+   "brand": "Domino's",
+   "parent": "Domino's Pizza, Inc.",
+   "title": "General Store Manager",
+   "url": "https://jobs.smartrecruiters.com/Dominos/744000163949832",
+   "location": "Pensacola, FL, US",
+   "remote": false,
+   "department": "",
+   "category": "Other",
+   "level": "Manager",
+   "posted": "2026-11-27",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "id": "baba1c5b069b",
+   "brand": "Domino's",
+   "parent": "Domino's Pizza, Inc.",
+   "title": "Delivery Driver($10 PER HR)08969",
+   "url": "https://jobs.smartrecruiters.com/Dominos/744000163944367",
+   "location": "Cairo, GA, US",
+   "remote": false,
+   "department": "",
+   "category": "People & HR",
+   "level": "Individual contributor",
+   "posted": "2026-11-27",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "id": "292aacb71990",
+   "brand": "Domino's",
+   "parent": "Domino's Pizza, Inc.",
+   "title": "Specialist, Talent Acquisition",
+   "url": "https://jobs.smartrecruiters.com/Dominos/744000163940290",
+   "location": "Ann Arbor, MI, US",
+   "remote": false,
+   "department": "",
+   "category": "People & HR",
+   "level": "Individual contributor",
+   "posted": "2026-11-27",
+   "first_seen": "2026-11-27"
+  },
+  {
+   "id": "46e1140678c3",
+   "brand": "Domino's",
+   "parent": "Domino's Pizza, Inc.",
+   "title": "Delivery Drive",
+   "url": "https://jobs.smartrecruiters.com/Dominos/744000163940209",
+   "location": "Stevensville, MD, US",
+   "remote": false,
+   "department": "",
+   "category": "Other",
+   "level": "Individual contributor",
+   "posted": "2026-11-27",
+   "first_seen": "2026-11-27"
+  },
   {
    "id": "05ced0ffd694",
    "brand": "Domino's",
@@ -689,6 +787,20 @@
    "first_seen": "2026-11-26"
   },
   {
+   "id": "55647424b7dd",
+   "brand": "Inspire Brands",
+   "parent": "Inspire Brands",
+   "title": "International Business Director, North Asia (Remote)",
+   "url": "https://careers.inspirebrands.com/international-business-director-north-asia-remote/job/7458361169468F35664AF7BEC1006033",
+   "location": "Seoul, Seoul, KR",
+   "remote": false,
+   "department": "",
+   "category": "Other",
+   "level": "Director",
+   "posted": "2026-11-26",
+   "first_seen": "2026-11-27"
+  },
+  {
    "id": "6e39a1fb6f63",
    "brand": "Domino's",
    "parent": "Domino's Pizza, Inc.",
@@ -1045,20 +1157,6 @@
    "title": "Field Leader",
    "url": "https://jobs.chipotle.com/job/pembroke-pines/field-leader/282/100444521840",
    "location": "Pembroke Pines, Florida, United States",
-   "remote": false,
-   "department": "",
-   "category": "Franchise & Field Ops",
-   "level": "Individual contributor",
-   "posted": "2026-11-24",
-   "first_seen": "2026-11-25"
-  },
-  {
-   "id": "95adeaddf44f",
-   "brand": "Chipotle",
-   "parent": "Chipotle Mexican Grill",
-   "title": "Field Leader",
-   "url": "https://jobs.chipotle.com/job/orlando/field-leader/282/103750035520",
-   "location": "Orlando, Florida, United States",
    "remote": false,
    "department": "",
    "category": "Franchise & Field Ops",
@@ -1795,34 +1893,6 @@
    "first_seen": "2026-11-22"
   },
   {
-   "id": "fcbd9896b481",
-   "brand": "Domino's",
-   "parent": "Domino's Pizza, Inc.",
-   "title": "Production Associate",
-   "url": "https://jobs.smartrecruiters.com/Dominos/744000162998479",
-   "location": "Odenton, MD, US",
-   "remote": false,
-   "department": "",
-   "category": "Other",
-   "level": "Individual contributor",
-   "posted": "2026-11-22",
-   "first_seen": "2026-11-22"
-  },
-  {
-   "id": "659fa17cb559",
-   "brand": "Domino's",
-   "parent": "Domino's Pizza, Inc.",
-   "title": "1077 - General Manager",
-   "url": "https://jobs.smartrecruiters.com/Dominos/744000162990726",
-   "location": "Sterling Heights, MI, US",
-   "remote": false,
-   "department": "",
-   "category": "Other",
-   "level": "Manager",
-   "posted": "2026-11-22",
-   "first_seen": "2026-11-22"
-  },
-  {
    "id": "2b5eeeafa796",
    "brand": "Chipotle",
    "parent": "Chipotle Mexican Grill",
@@ -1977,20 +2047,6 @@
    "first_seen": "2026-11-20"
   },
   {
-   "id": "e04df9a7fe3d",
-   "brand": "Inspire Brands",
-   "parent": "Inspire Brands",
-   "title": "Vice President - Franchise Operations - SONIC",
-   "url": "https://careers.inspirebrands.com/vice-president-franchise-operations-sonic/job/D97F67BBDD2D5376998E2AFD41EAB3DC",
-   "location": "Austin, TX, US | Atlanta, GA, US | TALLAHASSEE, FL, US",
-   "remote": false,
-   "department": "",
-   "category": "Franchise & Field Ops",
-   "level": "Executive",
-   "posted": "2026-11-20",
-   "first_seen": "2026-11-20"
-  },
-  {
    "id": "89a5f55b5292",
    "brand": "Inspire Brands",
    "parent": "Inspire Brands",
@@ -2033,6 +2089,20 @@
    "first_seen": "2026-11-21"
   },
   {
+   "id": "7c4606928fbc",
+   "brand": "Chipotle",
+   "parent": "Chipotle Mexican Grill",
+   "title": "Senior Manager, Facilities Tech EMS",
+   "url": "https://jobs.chipotle.com/job/columbus/senior-manager-facilities-tech-ems/282/100444591600",
+   "location": "Columbus, Ohio, United States",
+   "remote": false,
+   "department": "",
+   "category": "Development & Real Estate",
+   "level": "Manager",
+   "posted": "2026-11-19",
+   "first_seen": "2026-11-19"
+  },
+  {
    "id": "e2b3b091539d",
    "brand": "Chipotle",
    "parent": "Chipotle Mexican Grill",
@@ -2057,20 +2127,6 @@
    "department": "",
    "category": "Finance & Accounting",
    "level": "Individual contributor",
-   "posted": "2026-11-19",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "id": "7c4606928fbc",
-   "brand": "Chipotle",
-   "parent": "Chipotle Mexican Grill",
-   "title": "Senior Manager, Facilities Tech EMS",
-   "url": "https://jobs.chipotle.com/job/columbus/senior-manager-facilities-tech-ems/282/100444591600",
-   "location": "Columbus, Ohio, United States",
-   "remote": false,
-   "department": "",
-   "category": "Development & Real Estate",
-   "level": "Manager",
    "posted": "2026-11-19",
    "first_seen": "2026-11-19"
   },
@@ -3321,20 +3377,6 @@
    "first_seen": "2026-11-19"
   },
   {
-   "id": "e27e9a67f573",
-   "brand": "Restaurant Brands International",
-   "parent": "RBI",
-   "title": "Manager, Compensation, Restaurant & Supply Chain",
-   "url": "https://careers.rbi.com/global/en/job/R4081/Manager-Compensation-Restaurant-Supply-Chain",
-   "location": "Toronto, Ontario, Canada",
-   "remote": false,
-   "department": "People",
-   "category": "People & HR",
-   "level": "Manager",
-   "posted": "2026-11-13",
-   "first_seen": "2026-11-19"
-  },
-  {
    "id": "91c3f26d22aa",
    "brand": "Chipotle",
    "parent": "Chipotle Mexican Grill",
@@ -3554,20 +3596,6 @@
    "remote": false,
    "department": "",
    "category": "Other",
-   "level": "Individual contributor",
-   "posted": "2026-11-11",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "id": "51308902cc5d",
-   "brand": "Inspire Brands",
-   "parent": "Inspire Brands",
-   "title": "Analyst, Point of Sale",
-   "url": "https://careers.inspirebrands.com/analyst-point-of-sale/job/297E1B28A3A8DC45ECF509B0C6A50607",
-   "location": "Atlanta, GA, US",
-   "remote": false,
-   "department": "",
-   "category": "Strategy & Analytics",
    "level": "Individual contributor",
    "posted": "2026-11-11",
    "first_seen": "2026-11-19"
@@ -4199,20 +4227,6 @@
    "department": "",
    "category": "Other",
    "level": "Individual contributor",
-   "posted": "2026-11-07",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "id": "eea818e81ad1",
-   "brand": "Restaurant Brands International",
-   "parent": "RBI",
-   "title": "Bilingual Property Manager, Tim Hortons, C&US",
-   "url": "https://careers.rbi.com/global/en/job/R3435/Bilingual-Property-Manager-Tim-Hortons-C-US",
-   "location": "Toronto, Ontario, Canada | Dorval, Quebec, Canada",
-   "remote": false,
-   "department": "Development & Expansion",
-   "category": "Development & Real Estate",
-   "level": "Manager",
    "posted": "2026-11-07",
    "first_seen": "2026-11-19"
   },
@@ -6317,20 +6331,6 @@
    "first_seen": "2026-11-19"
   },
   {
-   "id": "d66c97331f68",
-   "brand": "Inspire Brands",
-   "parent": "Inspire Brands",
-   "title": "Emerging Market Growth Consultant(Austin TX Remote)",
-   "url": "https://careers.inspirebrands.com/emerging-market-growth-consultant-austin-tx-remote/job/BA91E91DC579F5FCC731678B4C94D8B2",
-   "location": "Austin, TX, US",
-   "remote": false,
-   "department": "",
-   "category": "Other",
-   "level": "Individual contributor",
-   "posted": "2026-09-29",
-   "first_seen": "2026-11-19"
-  },
-  {
    "id": "94ddaa1f1ce8",
    "brand": "Inspire Brands",
    "parent": "Inspire Brands",
@@ -6510,20 +6510,6 @@
    "category": "Other",
    "level": "Intern",
    "posted": "2026-09-19",
-   "first_seen": "2026-11-19"
-  },
-  {
-   "id": "4342ef887a5e",
-   "brand": "Inspire Brands",
-   "parent": "Inspire Brands",
-   "title": "Corporate Accounting, Staff Accountant",
-   "url": "https://careers.inspirebrands.com/corporate-accounting-staff-accountant/job/CADD2D77E83A7DBA85AC01983DEBAF01",
-   "location": "Atlanta, GA, US",
-   "remote": false,
-   "department": "",
-   "category": "Finance & Accounting",
-   "level": "Individual contributor",
-   "posted": "2026-09-17",
    "first_seen": "2026-11-19"
   },
   {

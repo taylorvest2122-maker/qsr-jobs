@@ -1,5 +1,5 @@
 {
- "updated": "2026-11-26T11:24:33Z",
+ "updated": "2026-11-27T11:20:16Z",
  "sources": [
   {
    "brand": "Wendy's",
@@ -18,7 +18,7 @@
   {
    "brand": "Domino's",
    "ok": true,
-   "count": 93,
+   "count": 98,
    "scanned": 8000,
    "message": "OK"
   },
@@ -32,8 +32,8 @@
   {
    "brand": "Chipotle",
    "ok": true,
-   "count": 191,
-   "scanned": 583,
+   "count": 190,
+   "scanned": 586,
    "message": "OK"
   },
   {
@@ -45,8 +45,8 @@
   {
    "brand": "Inspire Brands",
    "ok": true,
-   "count": 72,
-   "scanned": 72,
+   "count": 69,
+   "scanned": 69,
    "message": "OK"
   },
   {
@@ -66,8 +66,8 @@
   {
    "brand": "Restaurant Brands International",
    "ok": true,
-   "count": 116,
-   "scanned": 133,
+   "count": 114,
+   "scanned": 131,
    "message": "OK"
   },
   {
